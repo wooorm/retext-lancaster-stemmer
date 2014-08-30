@@ -1,0 +1,20 @@
+{
+  "name": "retext-lancaster-stemmer",
+  "version": "0.1.0",
+  "description": "Retext implementation of the Lancaster (Paice/Husk) Stemmer",
+  "keywords": [
+    "paice",
+    "husk",
+    "lancaster",
+    "stemmer",
+    "retext"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "wooorm/lancaster-stemmer": "^0.1.0"
+  },
+  "scripts" : [
+    "index.js"
+  ],
+  "repository": "wooorm/retext-lancaster-stemmer"
+}
