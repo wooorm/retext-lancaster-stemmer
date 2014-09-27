@@ -1,18 +1,57 @@
 'use strict';
 
-exports = module.exports = function () {};
+var stemmer;
 
-var stemmer = require('lancaster-stemmer');
+/**
+ * Module dependencies.
+ */
+
+stemmer = require('lancaster-stemmer');
+
+/**
+ * Define `lancasterStemmer`;
+ */
+
+function lancasterStemmer() {}
+
+/**
+ * `changetextinside` handler;
+ *
+ * @this Node
+ */
 
 function onchangetextinside() {
-    var value = this.toString();
+    var value;
+
+    value = this.toString();
+
     this.data.stem = value ? stemmer(value) : null;
 }
 
+/**
+ * Define `attach`.
+ *
+ * @param {Retext} retext - Instance of Retext.
+ */
+
 function attach(retext) {
-    retext.parser.TextOM.WordNode.on('changetextinside', onchangetextinside);
-    retext.parser.TextOM.WordNode.on('removeinside', onchangetextinside);
-    retext.parser.TextOM.WordNode.on('insertinside', onchangetextinside);
+    var WordNode;
+
+    WordNode = retext.parser.TextOM.WordNode;
+
+    WordNode.on('changetextinside', onchangetextinside);
+    WordNode.on('removeinside', onchangetextinside);
+    WordNode.on('insertinside', onchangetextinside);
 }
 
-exports.attach = attach;
+/**
+ * Expose `attach`.
+ */
+
+lancasterStemmer.attach = attach;
+
+/**
+ * Expose `lancasterStemmer`.
+ */
+
+module.exports = lancasterStemmer;
