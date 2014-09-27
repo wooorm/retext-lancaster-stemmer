@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "wooorm/lancaster-stemmer": "^0.1.0"
+    "wooorm/lancaster-stemmer": "^0.1.1"
   },
   "scripts" : [
     "index.js"
