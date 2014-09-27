@@ -24,26 +24,31 @@ $ bower install retext-lancaster-stemmer
 ```js
 var Retext = require('retext'),
     visit = require('retext-visit'),
-    stemmer = require('retext-lancaster-stemmer');
+    lancasterStemmer = require('retext-lancaster-stemmer'),
+    retext;
 
-var root = new Retext()
+retext = new Retext()
     .use(visit)
-    .use(stemmer)
-    .parse('A simple English sentence.');
+    .use(lancasterStemmer)
 
-root.visitType(root.WORD_NODE, function (node) {
-    console.log(node.toString(), node.data.stem);
+retext.parse('A simple English sentence.', function (err, tree) {
+    tree.visitType(root.WORD_NODE, function (node) {
+        console.log(node.toString(), node.data.stem);
+    });
+    /**
+     * 'A', 'A'
+     * 'simple', 'simpl'
+     * 'English', 'english'
+     * 'sentence', 'sentenc'
+     */
 });
-// 'A', 'a'
-// 'simple', 'simpl'
-// 'english', 'engl'
-// 'sentence', 'sent'
 ```
 
 This example also uses [retext-visit](https://github.com/wooorm/retext-visit).
 
 ## API
-None, the plugin automatically stems each word (using [wooorm/lancaster-stemmer](https://github.com/wooorm/lancaster-stemmer)) when its created or changed, and stores the stem in `wordNode.data.stem`.
+
+None, the plugin automatically stems each word (using [wooorm/lancaster-stemmer](https://github.com/wooorm/lancaster-stemmer)) when it’s created or changed, and stores the stem in `wordNode.data.stem`.
 
 ## Related
 
