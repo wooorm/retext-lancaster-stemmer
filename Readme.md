@@ -4,14 +4,19 @@
 
 ## Installation
 
-NPM:
+npm:
 ```sh
 $ npm install retext-lancaster-stemmer
 ```
 
-Component.js:
+Component:
 ```sh
 $ component install wooorm/retext-lancaster-stemmer
+```
+
+Bower:
+```sh
+$ bower install retext-lancaster-stemmer
 ```
 
 ## Usage
