@@ -1,17 +1,14 @@
 'use strict';
 
+/**
+ * Module dependencies.
+ */
+
 var stemmer,
     content,
     visit,
     Retext,
-    assert,
-    retext,
-    otherWords,
-    otherStems;
-
-/**
- * Module dependencies.
- */
+    assert;
 
 stemmer = require('./');
 Retext = require('retext');
@@ -23,6 +20,8 @@ assert = require('assert');
  * Retext.
  */
 
+var retext;
+
 retext = new Retext()
     .use(visit)
     .use(content)
@@ -31,6 +30,9 @@ retext = new Retext()
 /**
  * Constants.
  */
+
+var otherWords,
+    otherStems;
 
 otherWords = ['An', 'easy', 'normal', 'paragraph'];
 otherStems = ['an', 'easy', 'norm', 'paragraph'];
