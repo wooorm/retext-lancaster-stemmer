@@ -9,12 +9,6 @@ var stemmer;
 stemmer = require('lancaster-stemmer');
 
 /**
- * Define `lancasterStemmer`;
- */
-
-function lancasterStemmer() {}
-
-/**
  * `changetextinside` handler;
  *
  * @this Node
@@ -29,12 +23,12 @@ function onchangetextinside() {
 }
 
 /**
- * Define `attach`.
+ * Define `lancasterStemmer`.
  *
  * @param {Retext} retext - Instance of Retext.
  */
 
-function attach(retext) {
+function lancasterStemmer(retext) {
     var WordNode;
 
     WordNode = retext.parser.TextOM.WordNode;
@@ -43,12 +37,6 @@ function attach(retext) {
     WordNode.on('removeinside', onchangetextinside);
     WordNode.on('insertinside', onchangetextinside);
 }
-
-/**
- * Expose `attach`.
- */
-
-lancasterStemmer.attach = attach;
 
 /**
  * Expose `lancasterStemmer`.
