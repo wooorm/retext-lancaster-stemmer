@@ -1,4 +1,4 @@
-# retext-lancaster-stemmer [![Build Status](https://travis-ci.org/wooorm/retext-lancaster-stemmer.svg?branch=master)](https://travis-ci.org/wooorm/retext-lancaster-stemmer) [![Coverage Status](https://img.shields.io/coveralls/wooorm/retext-lancaster-stemmer.svg)](https://coveralls.io/r/wooorm/retext-lancaster-stemmer?branch=master)
+# retext-lancaster-stemmer [![Build Status](https://img.shields.io/travis/wooorm/retext-lancaster-stemmer.svg?style=flat)](https://travis-ci.org/wooorm/retext-lancaster-stemmer) [![Coverage Status](https://img.shields.io/coveralls/wooorm/retext-lancaster-stemmer.svg?style=flat)](https://coveralls.io/r/wooorm/retext-lancaster-stemmer?branch=master)
 
 **[retext](https://github.com/wooorm/retext "Retext")** implementation of the [Lancaster (Paice/Husk) stemming algorithm](http://www.comp.lancs.ac.uk/computing/research/stemming/index.htm).
 
