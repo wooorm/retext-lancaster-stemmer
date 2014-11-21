@@ -22,33 +22,36 @@ $ bower install retext-lancaster-stemmer
 ## Usage
 
 ```js
-var Retext = require('retext'),
-    visit = require('retext-visit'),
-    lancasterStemmer = require('retext-lancaster-stemmer'),
-    retext;
+var Retext = require('retext');
+var inspect = require('retext-inspect');
+var visit = require('retext-visit');
+var lancasterStemmer = require('retext-lancaster-stemmer');
 
-retext = new Retext()
+var retext = new Retext()
+    .use(inspect)
     .use(visit)
     .use(lancasterStemmer)
 
 retext.parse('A simple English sentence.', function (err, tree) {
-    tree.visitType(root.WORD_NODE, function (node) {
-        console.log(node.toString(), node.data.stem);
+    tree.visit(tree.WORD_NODE, function (node) {
+        console.log(node);
     });
     /**
-     * 'A', 'A'
-     * 'simple', 'simpl'
-     * 'English', 'english'
-     * 'sentence', 'sentenc'
+     * WordNode[1] [data={"stem":"a"}]
+     * └─ TextNode: 'A'
+     * WordNode[1] [data={"stem":"simpl"}]
+     * └─ TextNode: 'simple'
+     * WordNode[1] [data={"stem":"engl"}]
+     * └─ TextNode: 'English'
+     * WordNode[1] [data={"stem":"sent"}]
+     * └─ TextNode: 'sentence'
      */
 });
 ```
 
-This example also uses [retext-visit](https://github.com/wooorm/retext-visit).
-
 ## API
 
-None, the plugin automatically stems each word (using [wooorm/lancaster-stemmer](https://github.com/wooorm/lancaster-stemmer)) when it’s created or changed, and stores the stem in `wordNode.data.stem`.
+None, the plugin automatically stems each word (using [wooorm/lancaster-stemmer](https://github.com/wooorm/lancaster-stemmer)), and stores the stem in `wordNode.data.stem`.
 
 ## Related
 
