@@ -11,7 +11,7 @@
     "retext"
   ],
   "dependencies": {
-    "lancaster-stemmer": "^0.1.1"
+    "lancaster-stemmer": "^0.1.0"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,9 @@
   "devDependencies": {
     "eslint": "^0.9.0",
     "istanbul": "^0.3.0",
-    "jscs": "^1.7.0",
+    "jscs": "^1.0.0",
     "mocha": "^2.0.0",
-    "retext": "^0.3.0-rc.2",
+    "retext": "^0.4.0",
     "retext-content": "^0.2.5",
     "retext-visit": "^0.2.2"
   },

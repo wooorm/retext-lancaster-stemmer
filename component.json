@@ -11,7 +11,7 @@
     "retext"
   ],
   "dependencies": {
-    "wooorm/lancaster-stemmer": "^0.1.1"
+    "wooorm/lancaster-stemmer": "^0.1.0"
   },
   "repository": "wooorm/retext-lancaster-stemmer",
   "scripts" : [

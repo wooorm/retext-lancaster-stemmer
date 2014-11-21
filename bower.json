@@ -11,7 +11,7 @@
     "retext"
   ],
   "dependencies": {
-    "lancaster-stemmer": "^0.1.1"
+    "lancaster-stemmer": "^0.1.0"
   },
   "repository": {
     "type": "git",
