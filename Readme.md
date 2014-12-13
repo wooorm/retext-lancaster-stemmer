@@ -1,6 +1,6 @@
 # retext-lancaster-stemmer [![Build Status](https://img.shields.io/travis/wooorm/retext-lancaster-stemmer.svg?style=flat)](https://travis-ci.org/wooorm/retext-lancaster-stemmer) [![Coverage Status](https://img.shields.io/coveralls/wooorm/retext-lancaster-stemmer.svg?style=flat)](https://coveralls.io/r/wooorm/retext-lancaster-stemmer?branch=master)
 
-**[retext](https://github.com/wooorm/retext "Retext")** implementation of the [Lancaster (Paice/Husk) stemming algorithm](http://www.comp.lancs.ac.uk/computing/research/stemming/index.htm).
+**[retext](https://github.com/wooorm/retext)** implementation of the [Lancaster (Paice/Husk) stemming algorithm](http://www.comp.lancs.ac.uk/computing/research/stemming/index.htm).
 
 ## Installation
 
@@ -51,7 +51,7 @@ retext.parse('A simple English sentence.', function (err, tree) {
 
 ## API
 
-None, the plugin automatically stems each word (using [wooorm/lancaster-stemmer](https://github.com/wooorm/lancaster-stemmer)), and stores the stem in `wordNode.data.stem`.
+None, **retext-lancaster-stemmer** automatically detects the stem of each [`WordNode`](https://github.com/wooorm/textom#textomwordnode-nlcstwordnode) (using **[wooorm/stemmer](https://github.com/wooorm/lancaster-stemmer)**), and stores the stem in `node.data.stem`.
 
 ## Related
 
