@@ -2,10 +2,10 @@
  * Dependencies.
  */
 
-var Retext = require('wooorm/retext@0.4.0');
-var lancasterStemmer = require('wooorm/retext-lancaster-stemmer@0.1.5');
-var dom = require('wooorm/retext-dom@0.2.4');
-var visit = require('wooorm/retext-visit@0.2.2');
+var Retext = require('wooorm/retext@0.5.0-rc.1');
+var lancasterStemmer = require('wooorm/retext-lancaster-stemmer@0.1.6');
+var dom = require('wooorm/retext-dom@0.3.0');
+var visit = require('wooorm/retext-visit@0.2.3');
 
 /**
  * Retext.
