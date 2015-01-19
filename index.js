@@ -2,7 +2,7 @@
 
 var stemmer;
 
-/**
+/*
  * Module dependencies.
  */
 
@@ -13,7 +13,6 @@ stemmer = require('lancaster-stemmer');
  *
  * @this Node
  */
-
 function onchangeinside() {
     var value;
 
@@ -27,12 +26,11 @@ function onchangeinside() {
  *
  * @param {Retext} retext - Instance of Retext.
  */
-
 function lancasterStemmer(retext) {
     retext.TextOM.WordNode.on('changeinside', onchangeinside);
 }
 
-/**
+/*
  * Expose `lancasterStemmer`.
  */
 
