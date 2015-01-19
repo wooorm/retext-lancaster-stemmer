@@ -22,6 +22,12 @@ $ component install wooorm/retext-lancaster-stemmer
 $ bower install retext-lancaster-stemmer
 ```
 
+[Duo](http://duojs.org/#getting-started):
+
+```javascript
+var lancasterStemmer = require('wooorm/retext-lancaster-stemmer');
+```
+
 ## Usage
 
 ```javascript
