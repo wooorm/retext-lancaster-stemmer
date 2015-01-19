@@ -82,4 +82,4 @@ On a MacBook Air, **retext** performs about 13% slower with **retext-lancaster-s
 
 ## License
 
-MIT © [Titus Wormer](http://wooorm.com)
+[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)
