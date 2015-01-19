@@ -5,23 +5,26 @@
 ## Installation
 
 npm:
-```sh
+
+```bash
 $ npm install retext-lancaster-stemmer
 ```
 
 Component:
-```sh
+
+```bash
 $ component install wooorm/retext-lancaster-stemmer
 ```
 
 Bower:
-```sh
+
+```bash
 $ bower install retext-lancaster-stemmer
 ```
 
 ## Usage
 
-```js
+```javascript
 var Retext = require('retext');
 var inspect = require('retext-inspect');
 var visit = require('retext-visit');
@@ -57,7 +60,7 @@ None, **retext-lancaster-stemmer** automatically detects the stem of each [`Word
 
 On a MacBook Air, **retext** performs about 13% slower with **retext-lancaster-stemmer**.
 
-```
+```text
            retext w/o retext-lancaster-stemmer
   225 op/s » A paragraph (5 sentences, 100 words)
    25 op/s » A section (10 paragraphs, 50 sentences, 1,000 words)
