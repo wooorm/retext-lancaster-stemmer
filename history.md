@@ -4,6 +4,12 @@
 
 <!--lint disable maximum-line-length-->
 
+1.0.0 / 2015-08-01
+==================
+
+*   Refactor api for retext@1.0.0 ([07983d9](https://github.com/wooorm/retext-lancaster-stemmer/commit/07983d9))
+*   Fix link in `Readme.md` ([1c96e0e](https://github.com/wooorm/retext-lancaster-stemmer/commit/1c96e0e))
+
 0.1.7 / 2015-01-19
 ==================
 

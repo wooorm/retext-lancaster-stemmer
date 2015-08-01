@@ -1,6 +1,6 @@
 {
   "name": "retext-lancaster-stemmer",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "Retext implementation of the Lancaster (Paice/Husk) Stemmer",
   "license": "MIT",
   "keywords": [
