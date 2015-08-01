@@ -11,10 +11,12 @@
     "retext"
   ],
   "dependencies": {
-    "wooorm/lancaster-stemmer": "^0.1.0"
+    "wooorm/nlcst-to-string": "^0.1.5",
+    "wooorm/unist-util-visit": "^1.0.0",
+    "wooorm/lancaster-stemmer": "^0.1.4"
   },
   "repository": "wooorm/retext-lancaster-stemmer",
-  "scripts" : [
+  "scripts": [
     "index.js"
   ]
 }

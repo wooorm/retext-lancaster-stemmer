@@ -1,0 +1,6 @@
+build/
+components/
+coverage/
+build.js
+retext-lancaster-stemmer.js
+retext-lancaster-stemmer.min.js

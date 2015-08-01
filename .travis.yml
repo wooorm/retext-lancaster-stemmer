@@ -3,11 +3,7 @@ script: npm run-script test-travis
 node_js:
 - '0.10'
 - '0.11'
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
-deploy:
-  provider: npm
-  email: tituswormer@gmail.com
-  api_key:
-    secure: I3mu7c8+G77WrsqahJ50vOiurvkNUhvaW0eYEz1mrz5K2vmsWDf3p8TYr6Vjrac9R1m0LPmSaxfOlOiqiB3b1CRHxCdp6FVAEqUXG0uOjcRONcGPV+QPVrPliSHLDytPXNTW5ILyQ1bX4yH+45ihMilo+xxMFVJHg0tzLccR4ng=
-  on:
-    repo: wooorm/retext-lancaster-stemmer
+- '0.12'
+- iojs
+sudo: false
+after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov

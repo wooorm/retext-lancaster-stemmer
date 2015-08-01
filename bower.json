@@ -1,6 +1,6 @@
 {
   "name": "retext-lancaster-stemmer",
-  "main": "index.js",
+  "main": "retext-lancaster-stemmer.js",
   "description": "Retext implementation of the Lancaster (Paice/Husk) Stemmer",
   "license": "MIT",
   "keywords": [
@@ -10,9 +10,6 @@
     "stemmer",
     "retext"
   ],
-  "dependencies": {
-    "lancaster-stemmer": "^0.1.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wooorm/retext-lancaster-stemmer.git"
